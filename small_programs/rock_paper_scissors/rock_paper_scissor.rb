@@ -7,7 +7,7 @@ end
 def win?(first, second)
   (first == 'rock' && second == 'scissors') ||
     (first == 'paper' && second == 'rock') ||
-    (first == 'scissor' && second == 'rock')
+    (first == 'scissor' && second == 'paper')
 end
 
 def display_results(player, computer)
@@ -19,6 +19,7 @@ def display_results(player, computer)
     prompt("It's a tie!")
   end
 end
+
 
 choice = String.new
 loop do
